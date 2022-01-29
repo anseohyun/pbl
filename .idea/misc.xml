@@ -15,10 +15,12 @@
         <entry key="..\:/Users/SAMSUNG/Desktop/pbl/app/src/main/res/menu/bottom_menu.xml" value="0.12604166666666666" />
         <entry key="..\:/pbl/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.18888888888888888" />
         <entry key="..\:/pbl/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
-        <entry key="..\:/pbl/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/pbl/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/pbl/app/src/main/res/layout/activity_usage_details.xml" value="0.1" />
         <entry key="..\:/pbl/app/src/main/res/layout/frag1_home.xml" value="0.24726134585289514" />
         <entry key="..\:/pbl/app/src/main/res/layout/frag2_mypage.xml" value="0.1" />
+        <entry key="..\:/pbl/app/src/main/res/menu/bottom_menu.xml" value="0.1" />
+        <entry key="..\:/pbl/app/src/main/res/menu/top_nav.xml" value="0.3333333333333333" />
       </map>
     </option>
   </component>

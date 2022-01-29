@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.TextClock;
 import android.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -24,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
     Frag1 frag1_home;
     Frag2 frag2_mypage;
     FrameLayout main_frame;
-    Toolbar toolbar;
 
 
     @Override
@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
         frag1_home = new Frag1();
         frag2_mypage = new Frag2();
         main_frame = findViewById(R.id.main_frame);
-        toolbar = findViewById(R.id.toolbar);
-        
 
         bottomNavigationView = findViewById(R.id.bottomNavi);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

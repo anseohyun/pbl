@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.FrameLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -19,14 +20,19 @@ public class MainActivity extends AppCompatActivity {
     private BottomNavigationView bottomNavigationView; //바텀 네비게이션 뷰
     private FragmentManager fm;
     private FragmentTransaction ft;
-    private Frag1 frag1_home;
-    private Frag2 frag2_mypage;
+    Frag1 frag1_home;
+    Frag2 frag2_mypage;
+    FrameLayout main_frame;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        frag1_home = new Frag1();
+        frag2_mypage = new Frag2();
+        main_frame = findViewById(R.id.main_frame);
 
         bottomNavigationView = findViewById(R.id.bottomNavi);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -43,8 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-        frag1_home = new Frag1();
-        frag2_mypage = new Frag2();
+
         setFrag(0); //첫 프래그먼트 화면
     }
 

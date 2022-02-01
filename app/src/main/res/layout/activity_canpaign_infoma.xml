@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".canpaign_infoma">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="info"
+                    android:textSize="22sp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/cam_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="270dp"
+                    app:srcCompat="@android:drawable/ic_menu_slideshow" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/cam_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginTop="23dp"
+                android:text="cam_name"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cam_wri"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="23dp"
+                android:text="cam_wri"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/cam_info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginTop="20sp"
+                android:text="캠페인 정보"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cam_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginEnd="25sp"
+                android:layout_marginBottom="20sp"
+                android:text="우선 세 단어의 근간이 되는 어플리케이션(application)에 뜻부터 쉽게 이해하자면 컴퓨터 상의 프로그램이라고 생각하면 된다. 즉 컴퓨터에서 사용하는 각종 프로그램과 동일한 개념이다. 한글로 해석하면 응용이라는 뜻으로 어플리케이션을 줄여서 어플이라 부르거나 앱이라고 부르는 것이다. 우선 세 단어의 근간이 되는 어플리케이션 어플이라 부르거나 앱이라고 부르는 것이다." />
+
+            <TextView
+                android:id="@+id/goal_token_text"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginBottom="15sp"
+                android:text="목표토큰"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/goal_token"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25sp"
+                android:layout_marginBottom="35sp"
+                android:text="sample token" />
+
+            <Button
+                android:id="@+id/do_btn"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/do_btn"
+                android:text="기부하기"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

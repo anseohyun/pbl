@@ -14,6 +14,7 @@ public class canpaign_infoma extends AppCompatActivity {
     TextView cam_wri;
     TextView cam_info;
     TextView goal_token;
+    TextView goal_token_text;
     Button do_btn;
 
     @Override

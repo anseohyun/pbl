@@ -3,10 +3,12 @@ package softcampus.co.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Campaign_registration extends AppCompatActivity {
 
@@ -36,6 +38,13 @@ public class Campaign_registration extends AppCompatActivity {
         regi_exp_input = (EditText) findViewById(R.id.regi_exp_input);
         regi_img = (Button) findViewById(R.id.regi_img);
         regi_btn = (Button) findViewById(R.id.regi_btn);
+
+        regi_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),"캠페인이 등록되었습니다.",Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }

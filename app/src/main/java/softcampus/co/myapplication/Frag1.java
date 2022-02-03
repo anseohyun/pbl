@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -20,7 +21,7 @@ public class Frag1 extends Fragment {
 
     TextView main_name;
     TextView main_board;
-    ImageButton main_plus;
+    Button main_plus;
 
     @Nullable
     @Override
@@ -29,12 +30,13 @@ public class Frag1 extends Fragment {
 
         main_name = (TextView)view.findViewById(R.id.main_name);
         main_board = (TextView) view.findViewById(R.id.main_board);
-        main_plus = (ImageButton) view.findViewById(R.id.main_plus);
+        main_plus = (Button) view.findViewById(R.id.main_plus);
+
 
         main_plus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent  = new Intent(getContext(), Campaign_registration.class);
+                Intent intent  = new Intent(view.getContext(), Campaign_registration.class);
                 startActivity(intent);
             }
         });

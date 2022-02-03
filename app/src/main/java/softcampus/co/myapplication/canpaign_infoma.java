@@ -2,7 +2,9 @@ package softcampus.co.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -29,5 +31,15 @@ public class canpaign_infoma extends AppCompatActivity {
         goal_token = (TextView) findViewById(R.id.goal_token);
         do_btn = (Button) findViewById(R.id.do_btn);
 
+        do_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), DonationPage.class);
+                startActivity(intent);
+            }
+        });
+
+
     }
+
 }

@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAuth mFirebaseAuth; //로그아웃 버튼기능 활성화, 아직 버튼 xml은 없음.
 
+    //
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

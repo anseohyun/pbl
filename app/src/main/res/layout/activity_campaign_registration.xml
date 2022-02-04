@@ -30,10 +30,11 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
 
+
             <ImageView
                 android:id="@+id/regi_line"
                 android:layout_width="wrap_content"
-                android:layout_height="8sp"
+                android:layout_height="8dp"
                 android:layout_marginTop="21dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -114,16 +115,19 @@
                 android:hint="   캠페인에 대한 설명을 입력해 주세요.\n\n\n\n\n\n\n"/>
 
 
-            <Button
-                android:id="@+id/regi_img"
+            <ImageView
+                android:id="@+id/imageview"
                 android:layout_width="102dp"
                 android:layout_height="97dp"
                 android:layout_marginTop="28dp"
-                android:background="@drawable/photo"
+                app:srcCompat="@drawable/photo"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.106"
+                app:layout_constraintHorizontal_bias="0.084"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/regi_exp_input" />
+                app:layout_constraintTop_toBottomOf="@+id/regi_exp_input"
+                app:layout_constraintVertical_bias="0.055" />
 
             <Button
                 android:id="@+id/regi_btn"
@@ -138,7 +142,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.588"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/regi_img" />
+                app:layout_constraintTop_toBottomOf="@+id/imageview" />
 
 
 

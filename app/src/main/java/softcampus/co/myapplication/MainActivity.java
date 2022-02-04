@@ -16,6 +16,7 @@ import android.widget.TextClock;
 import android.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,9 +27,11 @@ public class MainActivity extends AppCompatActivity {
     Frag2 frag2_mypage;
     FrameLayout main_frame;
 
+    private FirebaseAuth mFirebaseAuth; //로그아웃 버튼기능 활성화, 아직 버튼 xml은 없음.
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

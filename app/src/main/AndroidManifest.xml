@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".campaign_info"
+            android:name=".canpaign_infoma"
             android:exported="false" />
         <activity
             android:name=".Campaign_registration"

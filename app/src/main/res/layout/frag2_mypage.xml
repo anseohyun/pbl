@@ -105,8 +105,9 @@
             android:text="로그아웃"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
-            tools:layout_editor_absoluteX="148dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -8,19 +8,16 @@
     tools:context=".RegisterActivity"
     tools:ignore="DuplicateIds">
 
-    <EditText
-        android:id="@+id/et_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="이메일을 입력하세요."
-        android:inputType="textEmailAddress"
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="213dp"
+        android:layout_height="46dp"
+        android:text="회원가입"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408"
+        app:layout_constraintVertical_bias="0.877"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -28,27 +25,61 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="11dp"
+        android:layout_marginBottom="47dp"
         android:ems="10"
-        android:hint="비밀번호를 입력하세요."
+        android:hint="비밀번호"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/et_repwd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_email"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.026"
         tools:ignore="MissingConstraints" />
 
-    <Button
-        android:id="@+id/btn_register"
+    <EditText
+        android:id="@+id/et_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="회원가입"
+        android:ems="10"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name"
+        app:layout_constraintVertical_bias="0.028"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/et_repwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="비밀번호 확인"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.569"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="이름"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.392"
         tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,7 @@
 package softcampus.co.myapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +17,6 @@ public class MyPage extends AppCompatActivity {
     private View view;
 
     TextView username;
-    ImageView usericon;
     ImageView owntoken_btn;
     ImageView donationrecord_btn;
     TextView owntoken_text;
@@ -24,6 +24,9 @@ public class MyPage extends AppCompatActivity {
     TextView notice_btn;
     TextView help_btn;
     Button logout_button;
+
+    private int GET_GALLERY_IMAGE = 200;
+    private ImageView usericon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +80,30 @@ public class MyPage extends AppCompatActivity {
             }
         });
 
+        //마이페이지 사진 변경
+        usericon.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent. setDataAndType(android.provider.MediaStore.Images.Media.EXTERNAL_CONTENT_URI, "image/*");
+                startActivityForResult(intent, GET_GALLERY_IMAGE);
+            }
+        });
+
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == GET_GALLERY_IMAGE && resultCode == RESULT_OK && data != null && data.getData() != null) {
+
+            Uri selectedImageUri = data.getData();
+            usericon.setImageURI(selectedImageUri);
+
+        }
+
+    }
+
 
 }
